@@ -1,0 +1,11 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - pwd
+  build:
+    commands:
+      - echo "Build phase started"
+      - mkdir deploy
+      - cp index.html deploy/
